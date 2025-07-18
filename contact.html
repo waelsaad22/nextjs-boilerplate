@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - Edu Smart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Edu Smart</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="programs.html" class="nav-link">Programs</a></li>
+                    <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                    <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                    <li><a href="contact.html" class="nav-link active">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">Contact Us</h2>
+                <div class="prose">
+                    <p style="text-align: center; font-size: 1.1rem; color: var(--text-secondary); max-width: 800px; margin: 0 auto;">
+                        We're here to help you on your educational journey. Reach out to us with any questions, concerns, or feedback.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="grid grid-2" style="gap: 3rem; align-items: start;">
+                    <!-- Contact Form -->
+                    <div>
+                        <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">Send us a Message</h3>
+                        <form id="contactForm" class="form">
+                            <div class="grid grid-2" style="gap: 1.5rem;">
+                                <div class="form-group">
+                                    <label for="firstName" class="form-label">First Name *</label>
+                                    <input type="text" id="firstName" name="firstName" class="form-input" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="lastName" class="form-label">Last Name *</label>
+                                    <input type="text" id="lastName" name="lastName" class="form-input" required>
+                                </div>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email" class="form-label">Email Address *</label>
+                                <input type="email" id="email" name="email" class="form-input" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="phone" class="form-label">Phone Number</label>
+                                <input type="tel" id="phone" name="phone" class="form-input">
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="subject" class="form-label">Subject *</label>
+                                <select id="subject" name="subject" class="form-input" required>
+                                    <option value="">Select a subject</option>
+                                    <option value="general">General Inquiry</option>
+                                    <option value="admissions">Admissions Question</option>
+                                    <option value="programs">Program Information</option>
+                                    <option value="technical">Technical Support</option>
+                                    <option value="financial">Financial Aid</option>
+                                    <option value="career">Career Services</option>
+                                    <option value="other">Other</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="message" class="form-label">Message *</label>
+                                <textarea id="message" name="message" class="form-textarea" rows="6" 
+                                          placeholder="Please provide details about your inquiry..." required></textarea>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="preferredContact" class="form-label">Preferred Contact Method</label>
+                                <select id="preferredContact" name="preferredContact" class="form-input">
+                                    <option value="email">Email</option>
+                                    <option value="phone">Phone</option>
+                                    <option value="either">Either</option>
+                                </select>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="bestTime" class="form-label">Best Time to Contact</label>
+                                <select id="bestTime" name="bestTime" class="form-input">
+                                    <option value="">Select preferred time</option>
+                                    <option value="morning">Morning (9AM - 12PM)</option>
+                                    <option value="afternoon">Afternoon (12PM - 5PM)</option>
+                                    <option value="evening">Evening (5PM - 8PM)</option>
+                                    <option value="anytime">Anytime</option>
+                                </select>
+                            </div>
+                            
+                            <div style="margin-top: 2rem;">
+                                <button type="submit" class="btn btn-primary" style="width: 100%; padding: 1rem; font-size: 1.1rem;">
+                                    Send Message
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                    
+                    <!-- Contact Information -->
+                    <div>
+                        <h3 style="margin-bottom: 2rem; font-size: 1.8rem;">Get in Touch</h3>
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 1rem;">Main Office</h4>
+                            <p><strong>Address:</strong><br>
+                            123 Education Boulevard<br>
+                            Digital City, DC 12345<br>
+                            United States</p>
+                            
+                            <p style="margin-top: 1rem;"><strong>Phone:</strong> (555) 123-4567</p>
+                            <p><strong>Email:</strong> info@edusmart.edu</p>
+                            <p><strong>Hours:</strong> Monday - Friday, 8:00 AM - 6:00 PM EST</p>
+                        </div>
+                        
+                        <div class="card" style="margin-bottom: 2rem;">
+                            <h4 style="margin-bottom: 1rem;">Emergency Contact</h4>
+                            <p><strong>24/7 Student Support:</strong> (555) 123-4570</p>
+                            <p><strong>Technical Emergency:</strong> support@edusmart.edu</p>
+                        </div>
+                        
+                        <div class="card">
+                            <h4 style="margin-bottom: 1rem;">Social Media</h4>
+                            <p>Follow us for updates and news:</p>
+                            <ul style="margin-top: 1rem; line-height: 1.8;">
+                                <li>LinkedIn: @EduSmartUniversity</li>
+                                <li>Twitter: @EduSmartU</li>
+                                <li>Facebook: Edu Smart University</li>
+                                <li>YouTube: Edu Smart Channel</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h3 class="section-title">Department Contacts</h3>
+                <div class="grid grid-3">
+                    <div class="card">
+                        <h3>Admissions Office</h3>
+                        <p><strong>Phone:</strong> (555) 123-4567</p>
+                        <p><strong>Email:</strong> admissions@edusmart.edu</p>
+                        <p><strong>Hours:</strong> Mon-Fri 8AM-6PM EST</p>
+                        <p><strong>Services:</strong></p>
+                        <ul style="margin-top: 0.5rem; line-height: 1.6;">
+                            <li>Application assistance</li>
+                            <li>Program information</li>
+                            <li>Transfer credit evaluation</li>
+                            <li>Enrollment support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Financial Aid</h3>
+                        <p><strong>Phone:</strong> (555) 123-4568</p>
+                        <p><strong>Email:</strong> financialaid@edusmart.edu</p>
+                        <p><strong>Hours:</strong> Mon-Fri 9AM-5PM EST</p>
+                        <p><strong>Services:</strong></p>
+                        <ul style="margin-top: 0.5rem; line-height: 1.6;">
+                            <li>FAFSA assistance</li>
+                            <li>Scholarship information</li>
+                            <li>Payment plans</li>
+                            <li>Financial counseling</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Academic Advising</h3>
+                        <p><strong>Phone:</strong> (555) 123-4571</p>
+                        <p><strong>Email:</strong> advising@edusmart.edu</p>
+                        <p><strong>Hours:</strong> Mon-Fri 8AM-7PM EST</p>
+                        <p><strong>Services:</strong></p>
+                        <ul style="margin-top: 0.5rem; line-height: 1.6;">
+                            <li>Course planning</li>
+                            <li>Degree requirements</li>
+                            <li>Academic support</li>
+                            <li>Graduation planning</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Career Services</h3>
+                        <p><strong>Phone:</strong> (555) 123-4572</p>
+                        <p><strong>Email:</strong> careers@edusmart.edu</p>
+                        <p><strong>Hours:</strong> Mon-Fri 9AM-6PM EST</p>
+                        <p><strong>Services:</strong></p>
+                        <ul style="margin-top: 0.5rem; line-height: 1.6;">
+                            <li>Job placement assistance</li>
+                            <li>Resume reviews</li>
+                            <li>Interview preparation</li>
+                            <li>Networking events</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Technical Support</h3>
+                        <p><strong>Phone:</strong> (555) 123-4569</p>
+                        <p><strong>Email:</strong> support@edusmart.edu</p>
+                        <p><strong>Hours:</strong> 24/7 Online Support</p>
+                        <p><strong>Services:</strong></p>
+                        <ul style="margin-top: 0.5rem; line-height: 1.6;">
+                            <li>Platform assistance</li>
+                            <li>Login issues</li>
+                            <li>Software support</li>
+                            <li>Hardware recommendations</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Student Services</h3>
+                        <p><strong>Phone:</strong> (555) 123-4573</p>
+                        <p><strong>Email:</strong> students@edusmart.edu</p>
+                        <p><strong>Hours:</strong> Mon-Fri 8AM-8PM EST</p>
+                        <p><strong>Services:</strong></p>
+                        <ul style="margin-top: 0.5rem; line-height: 1.6;">
+                            <li>Student life support</li>
+                            <li>Disability services</li>
+                            <li>Counseling services</li>
+                            <li>Student organizations</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h3 class="section-title">Frequently Asked Questions</h3>
+                <div class="grid grid-2">
+                    <div class="card">
+                        <h3>How do I apply for admission?</h3>
+                        <p>You can apply online through our admissions page. The process includes submitting your application, transcripts, and required documents. Our admissions team will guide you through each step.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>What technical requirements do I need?</h3>
+                        <p>You'll need a reliable internet connection, a computer or tablet, and basic software. We provide detailed technical requirements and support to ensure you're ready for online learning.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Are there payment plans available?</h3>
+                        <p>Yes, we offer flexible payment plans to make education affordable. Contact our financial aid office to discuss options that work for your budget.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>How do I access student support services?</h3>
+                        <p>All students have access to academic advising, career services, technical support, and counseling services. You can reach out via phone, email, or through our student portal.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>Can I transfer credits from another institution?</h3>
+                        <p>Yes, we accept transfer credits from accredited institutions. Our admissions team will evaluate your transcripts and determine which credits can be applied to your program.</p>
+                    </div>
+                    
+                    <div class="card">
+                        <h3>What if I need help with my coursework?</h3>
+                        <p>We provide comprehensive academic support including tutoring, study groups, and one-on-one assistance with faculty. Our goal is to ensure your success in every course.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="card" style="text-align: center; background: var(--background-light);">
+                    <h3>Visit Our Campus</h3>
+                    <p style="margin: 1rem 0;">While we're primarily a digital university, we welcome visitors to our main campus for tours and information sessions.</p>
+                    <p><strong>Campus Address:</strong><br>
+                    123 Education Boulevard, Digital City, DC 12345</p>
+                    <p style="margin-top: 1rem;">
+                        <strong>Campus Tours:</strong> Available by appointment<br>
+                        <strong>Information Sessions:</strong> First Saturday of each month at 10:00 AM
+                    </p>
+                    <div style="margin-top: 2rem;">
+                        <a href="mailto:tours@edusmart.edu" class="btn btn-primary">Schedule a Visit</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="prose">
+                    <h3>Feedback and Suggestions</h3>
+                    <p style="text-align: center;">
+                        We value your feedback and are constantly working to improve our services. If you have suggestions for how we can better serve our students and community, please don't hesitate to reach out.
+                    </p>
+                    <div style="text-align: center; margin-top: 2rem;">
+                        <p><strong>Feedback Email:</strong> feedback@edusmart.edu</p>
+                        <p><strong>Anonymous Feedback:</strong> Available through our student portal</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Edu Smart</h4>
+                    <p>Empowering minds through digital education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@edusmart.edu</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Edu Smart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
