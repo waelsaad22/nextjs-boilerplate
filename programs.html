@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Programs - Edu Smart</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="nav-brand">
+                <h1>Edu Smart</h1>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="programs.html" class="nav-link active">Programs</a></li>
+                    <li><a href="admissions.html" class="nav-link">Admissions</a></li>
+                    <li><a href="faculty.html" class="nav-link">Faculty</a></li>
+                    <li><a href="contact.html" class="nav-link">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-btn" id="mobileMenuBtn">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="content-section">
+            <div class="container">
+                <h2 class="section-title">Academic Programs</h2>
+                <p style="text-align: center; max-width: 800px; margin: 0 auto 3rem; color: var(--text-secondary); font-size: 1.1rem;">
+                    Discover our comprehensive range of programs designed to prepare you for success in today's digital world. Each program combines theoretical knowledge with practical skills to ensure you're ready for your career.
+                </p>
+
+                <!-- Search and Filter Controls -->
+                <div style="margin-bottom: 3rem; text-align: center;">
+                    <div style="margin-bottom: 2rem;">
+                        <input type="text" id="searchInput" placeholder="Search programs..." 
+                               style="padding: 1rem; border: 2px solid var(--border-color); border-radius: var(--border-radius); width: 100%; max-width: 400px; font-size: 1rem;">
+                    </div>
+                    <div class="filter-buttons" style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <button class="filter-btn btn btn-secondary active" data-filter="all">All Programs</button>
+                        <button class="filter-btn btn btn-secondary" data-filter="technology">Technology</button>
+                        <button class="filter-btn btn btn-secondary" data-filter="business">Business</button>
+                        <button class="filter-btn btn btn-secondary" data-filter="design">Design</button>
+                        <button class="filter-btn btn btn-secondary" data-filter="healthcare">Healthcare</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h3 class="section-title">Bachelor's Degree Programs</h3>
+                <div class="grid grid-3">
+                    <div class="card searchable filterable" data-category="technology">
+                        <h3>Bachelor of Computer Science</h3>
+                        <p><strong>Duration:</strong> 4 years | <strong>Credits:</strong> 120</p>
+                        <p>Comprehensive program covering programming, algorithms, data structures, software engineering, and emerging technologies like AI and machine learning.</p>
+                        <p><strong>Career Paths:</strong> Software Developer, Systems Analyst, Data Scientist, Cybersecurity Specialist</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="business">
+                        <h3>Bachelor of Business Administration</h3>
+                        <p><strong>Duration:</strong> 4 years | <strong>Credits:</strong> 120</p>
+                        <p>Build essential business skills in management, finance, marketing, and operations with a focus on digital business strategies.</p>
+                        <p><strong>Career Paths:</strong> Business Manager, Marketing Specialist, Financial Analyst, Entrepreneur</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="design">
+                        <h3>Bachelor of Digital Design</h3>
+                        <p><strong>Duration:</strong> 4 years | <strong>Credits:</strong> 120</p>
+                        <p>Creative program combining graphic design, web design, user experience, and digital media production.</p>
+                        <p><strong>Career Paths:</strong> Graphic Designer, UX/UI Designer, Web Designer, Creative Director</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="technology">
+                        <h3>Bachelor of Information Technology</h3>
+                        <p><strong>Duration:</strong> 4 years | <strong>Credits:</strong> 120</p>
+                        <p>Focus on IT infrastructure, network administration, database management, and cloud computing technologies.</p>
+                        <p><strong>Career Paths:</strong> IT Manager, Network Administrator, Cloud Architect, Systems Engineer</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="business">
+                        <h3>Bachelor of Digital Marketing</h3>
+                        <p><strong>Duration:</strong> 4 years | <strong>Credits:</strong> 120</p>
+                        <p>Master digital marketing strategies, social media marketing, SEO, content marketing, and analytics.</p>
+                        <p><strong>Career Paths:</strong> Digital Marketing Manager, Social Media Specialist, SEO Expert, Content Strategist</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="healthcare">
+                        <h3>Bachelor of Health Informatics</h3>
+                        <p><strong>Duration:</strong> 4 years | <strong>Credits:</strong> 120</p>
+                        <p>Combine healthcare knowledge with information technology to improve patient care and healthcare systems.</p>
+                        <p><strong>Career Paths:</strong> Health Information Manager, Clinical Data Analyst, Healthcare IT Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h3 class="section-title">Master's Degree Programs</h3>
+                <div class="grid grid-3">
+                    <div class="card searchable filterable" data-category="technology">
+                        <h3>Master of Data Science</h3>
+                        <p><strong>Duration:</strong> 2 years | <strong>Credits:</strong> 36</p>
+                        <p>Advanced program in statistical analysis, machine learning, big data technologies, and data visualization.</p>
+                        <p><strong>Career Paths:</strong> Data Scientist, Machine Learning Engineer, Business Intelligence Analyst</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="business">
+                        <h3>Master of Business Administration (MBA)</h3>
+                        <p><strong>Duration:</strong> 2 years | <strong>Credits:</strong> 48</p>
+                        <p>Executive-level business education with specializations in digital transformation, leadership, and strategic management.</p>
+                        <p><strong>Career Paths:</strong> Executive Manager, Business Consultant, Operations Director, CEO</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="technology">
+                        <h3>Master of Cybersecurity</h3>
+                        <p><strong>Duration:</strong> 2 years | <strong>Credits:</strong> 36</p>
+                        <p>Comprehensive cybersecurity program covering threat analysis, digital forensics, and security management.</p>
+                        <p><strong>Career Paths:</strong> Cybersecurity Analyst, Security Architect, Chief Information Security Officer</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="design">
+                        <h3>Master of User Experience Design</h3>
+                        <p><strong>Duration:</strong> 2 years | <strong>Credits:</strong> 36</p>
+                        <p>Advanced UX design program focusing on user research, interaction design, and design strategy.</p>
+                        <p><strong>Career Paths:</strong> UX Director, Design Researcher, Product Designer, Design Strategist</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="technology">
+                        <h3>Master of Artificial Intelligence</h3>
+                        <p><strong>Duration:</strong> 2 years | <strong>Credits:</strong> 36</p>
+                        <p>Cutting-edge AI program covering machine learning, neural networks, natural language processing, and robotics.</p>
+                        <p><strong>Career Paths:</strong> AI Engineer, Research Scientist, Machine Learning Architect</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="business">
+                        <h3>Master of Project Management</h3>
+                        <p><strong>Duration:</strong> 2 years | <strong>Credits:</strong> 36</p>
+                        <p>Advanced project management methodologies, leadership skills, and digital project management tools.</p>
+                        <p><strong>Career Paths:</strong> Project Manager, Program Manager, Operations Manager, Consultant</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h3 class="section-title">Certificate Programs</h3>
+                <div class="grid grid-3">
+                    <div class="card searchable filterable" data-category="technology">
+                        <h3>Web Development Certificate</h3>
+                        <p><strong>Duration:</strong> 6 months | <strong>Credits:</strong> 18</p>
+                        <p>Learn HTML, CSS, JavaScript, React, and backend development to become a full-stack web developer.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="business">
+                        <h3>Digital Marketing Certificate</h3>
+                        <p><strong>Duration:</strong> 4 months | <strong>Credits:</strong> 12</p>
+                        <p>Master Google Ads, Facebook Marketing, SEO, and content marketing strategies.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="design">
+                        <h3>Graphic Design Certificate</h3>
+                        <p><strong>Duration:</strong> 5 months | <strong>Credits:</strong> 15</p>
+                        <p>Learn Adobe Creative Suite, design principles, and portfolio development.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="technology">
+                        <h3>Cloud Computing Certificate</h3>
+                        <p><strong>Duration:</strong> 4 months | <strong>Credits:</strong> 12</p>
+                        <p>AWS, Azure, and Google Cloud Platform certification preparation and hands-on experience.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="business">
+                        <h3>Data Analytics Certificate</h3>
+                        <p><strong>Duration:</strong> 6 months | <strong>Credits:</strong> 18</p>
+                        <p>Excel, SQL, Python, and Tableau for business intelligence and data analysis.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="healthcare">
+                        <h3>Healthcare Administration Certificate</h3>
+                        <p><strong>Duration:</strong> 4 months | <strong>Credits:</strong> 12</p>
+                        <p>Healthcare systems, medical billing, and healthcare management fundamentals.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <h3 class="section-title">Professional Development Courses</h3>
+                <div class="grid grid-3">
+                    <div class="card searchable filterable" data-category="business">
+                        <h3>Leadership and Management</h3>
+                        <p><strong>Duration:</strong> 8 weeks</p>
+                        <p>Develop essential leadership skills, team management, and strategic thinking capabilities.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="technology">
+                        <h3>Agile and Scrum Methodology</h3>
+                        <p><strong>Duration:</strong> 6 weeks</p>
+                        <p>Master Agile principles, Scrum framework, and project management best practices.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="business">
+                        <h3>Financial Planning and Analysis</h3>
+                        <p><strong>Duration:</strong> 10 weeks</p>
+                        <p>Advanced financial modeling, budgeting, forecasting, and investment analysis.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="design">
+                        <h3>Mobile App Design</h3>
+                        <p><strong>Duration:</strong> 8 weeks</p>
+                        <p>iOS and Android app design principles, prototyping, and user interface design.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="technology">
+                        <h3>Blockchain Technology</h3>
+                        <p><strong>Duration:</strong> 6 weeks</p>
+                        <p>Understand blockchain fundamentals, cryptocurrency, and decentralized applications.</p>
+                    </div>
+                    
+                    <div class="card searchable filterable" data-category="business">
+                        <h3>E-commerce Strategy</h3>
+                        <p><strong>Duration:</strong> 8 weeks</p>
+                        <p>Online retail strategies, marketplace management, and digital commerce optimization.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="prose">
+                    <h3>Program Features</h3>
+                    <div class="grid grid-2" style="margin-top: 2rem;">
+                        <div class="card">
+                            <h3>Flexible Scheduling</h3>
+                            <p>All programs offer flexible scheduling options including evening classes, weekend sessions, and self-paced learning modules to accommodate working professionals.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Industry Partnerships</h3>
+                            <p>Our programs are developed in collaboration with leading industry partners, ensuring curriculum relevance and providing internship and job placement opportunities.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Hands-on Learning</h3>
+                            <p>Every program includes practical projects, case studies, and real-world applications to ensure you gain applicable skills and experience.</p>
+                        </div>
+                        <div class="card">
+                            <h3>Career Support</h3>
+                            <p>Comprehensive career services including resume building, interview preparation, job placement assistance, and ongoing career coaching.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Edu Smart</h4>
+                    <p>Empowering minds through digital education.</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="about.html">About</a></li>
+                        <li><a href="programs.html">Programs</a></li>
+                        <li><a href="admissions.html">Admissions</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <p>Email: info@edusmart.edu</p>
+                    <p>Phone: (555) 123-4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 Edu Smart. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
